@@ -104,7 +104,7 @@ static String expired_bar ;
         jLabel10 = new javax.swing.JLabel();
         expired1 = new javax.swing.JButton();
         almost = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        retdrug = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -615,15 +615,15 @@ static String expired_bar ;
         jPanel1.add(almost);
         almost.setBounds(670, 310, 150, 23);
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setText("Retrieval Drug");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        retdrug.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        retdrug.setText("Retrieval Drug");
+        retdrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                retdrugActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3);
-        jButton3.setBounds(338, 235, 150, 23);
+        jPanel1.add(retdrug);
+        retdrug.setBounds(338, 235, 150, 23);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/capsule.pill.health.medicine (1).jpg"))); // NOI18N
         jPanel1.add(jLabel13);
@@ -641,14 +641,14 @@ static String expired_bar ;
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1199, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 586, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1222, 657));
+        setSize(new java.awt.Dimension(1215, 646));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -863,9 +863,9 @@ new Shift_Sales().setVisible(true);
 new Inbox().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void retdrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retdrugActionPerformed
 new Retrieval_Drug().setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_retdrugActionPerformed
 
     /**
      * @param args the command line arguments
@@ -922,7 +922,6 @@ new Retrieval_Drug().setVisible(true);
     private javax.swing.JButton expired1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -947,6 +946,7 @@ new Retrieval_Drug().setVisible(true);
     private javax.swing.JButton newcom;
     public javax.swing.JButton purchase;
     private javax.swing.JButton renew_validate;
+    private javax.swing.JButton retdrug;
     private javax.swing.JButton sales;
     private javax.swing.JButton salesbill;
     private javax.swing.JButton searchdrug;
@@ -1000,6 +1000,7 @@ private void buttonvis(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1047,6 +1048,7 @@ private void enteruser(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1088,6 +1090,7 @@ private void enterdrugs(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1129,6 +1132,7 @@ private void enterdrugdetails(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1170,6 +1174,7 @@ private void enterpurchase(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1211,6 +1216,7 @@ private void sales(){
     
     salesbill.setVisible(true);
     shiftsales.setVisible(true);
+    retdrug.setVisible(true);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1252,6 +1258,7 @@ private void setting(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(false);
     endwith.setVisible(false);
@@ -1293,6 +1300,7 @@ private void company(){
     
     salesbill.setVisible(false);
     shiftsales.setVisible(false);
+    retdrug.setVisible(false);
     
     newcom.setVisible(true);
     endwith.setVisible(true);
